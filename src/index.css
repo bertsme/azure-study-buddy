@@ -1,1 +1,27 @@
 @import "tailwindcss";
+.neu-scope {
+    --neu-bg: #18233f;
+    --neu-dark: #0e1629;
+    --neu-light: #243459;
+    background: var(--neu-bg);
+  }
+  .neu-raised {
+    background: var(--neu-bg);
+    box-shadow: 8px 8px 18px var(--neu-dark), -8px -8px 18px var(--neu-light);
+  }
+  .neu-raised-sm {
+    background: var(--neu-bg);
+    box-shadow: 4px 4px 9px var(--neu-dark), -4px -4px 9px var(--neu-light);
+  }
+  .neu-inset {
+    background: var(--neu-bg);
+    box-shadow: inset 5px 5px 10px var(--neu-dark), inset -5px -5px 10px var(--neu-light);
+  }
+  .neu-glow {
+    background: var(--neu-bg);
+    box-shadow: 8px 8px 18px var(--neu-dark), -8px -8px 18px var(--neu-light),
+      0 0 22px rgba(63, 224, 224, 0.35);
+  }
+  .neu-press:active {
+    box-shadow: inset 4px 4px 8px var(--neu-dark), inset -4px -4px 8px var(--neu-light);
+  }

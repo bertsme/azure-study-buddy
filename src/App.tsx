@@ -2,6 +2,8 @@ import Flashcards from './pages/flashcards'
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom'
 import Quiz from './pages/quiz'
 import Readiness from './pages/Readiness'
+import Planner from './pages/planner'
+import Buddy from './pages/Buddy'
 function Home() {
   return (
     <div className="mx-auto max-w-2xl p-6 text-center">
@@ -32,8 +34,14 @@ export default function App() {
             Flashcards
           </NavLink>
           <NavLink to="/readiness" className="text-slate-300 hover:text-white">
-  Readiness
-</NavLink>  
+            Readiness
+          </NavLink>
+          <NavLink to="/planner" className="text-slate-300 hover:text-white">
+            Planner
+          </NavLink>
+          <NavLink to="/buddy" className="text-slate-300 hover:text-white">
+            Buddy
+          </NavLink>
           <span className="ml-auto text-xs text-slate-500">
             Unofficial · not affiliated with Microsoft
           </span>
@@ -43,6 +51,8 @@ export default function App() {
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/flashcards" element={<Flashcards />} />
           <Route path="/readiness" element={<Readiness />} />
+          <Route path="/planner" element={<Planner />} />
+          <Route path="/buddy" element={<Buddy />} />
         </Routes>
       </div>
     </BrowserRouter>
